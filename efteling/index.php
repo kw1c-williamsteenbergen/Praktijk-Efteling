@@ -37,16 +37,14 @@ include "./includes/Navigatie.php";
     </h1>
 </header>
 
-<main id="wrapper">
+<main id="plaatje">
     <nav>
         <ul>
 
         </ul>
     </nav>
     <section>
-           <div id="plaatje">
 
-           </div>
     </section>
 </main>
 </body>

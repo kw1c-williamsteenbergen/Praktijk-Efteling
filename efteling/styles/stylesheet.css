@@ -1,10 +1,47 @@
+
 #plaatje
 {
     background-image: url("../images/1600x900-en-toen-jongen-bij-holle-bolle-gijs.jpg");
-    height: 80vh;
+    height: 70vh;
     position: relative;
-    background-position: 50% 50%;
     width: 100%;
-    background-size: cover;
+    background-repeat: no-repeat;
 
 }
+
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navigation
+{
+    background-color: #1a4780;
+    padding: 10px 0;
+}
+
+.navigation ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li
+{
+    display: inline;
+}
+
+.navigation ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navigation ul li a:hover
+{
+    background-color: #1761a0;
+}
+
