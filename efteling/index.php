@@ -19,9 +19,9 @@
             <ul>
                 <li><a href="#">Ontdek het park</a></li>
                 <li><a href="#">Plan je bezoek</a></li>
-                <li><a href="#">Attracties</a></li>
-                <li><a href="#">Shows en entertainment</a></li>
-                <li><a href="#">Verblijf</a></li>
+                <li><a href="#">Kom overnachten</a></li>
+                <li><a href="#">Welke atractie past bij jouw?</a></li>
+                <li><a href="#" class="button2">Tickets</a></li>
             </ul>
         </nav>
     </div>
