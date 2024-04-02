@@ -1,38 +1,70 @@
-#plaatje
-{
 
-body
-{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
-}
-
-.navigation
-{
-    background-color: #1a4780;
-    padding: 10px 0;
-}
-
-.navigation ul
-{
-    list-style-type: none;
-    margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
-.navigation ul li
-{
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; /* Pas dit aan op basis van de werkelijke grootte van het logo */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
     display: inline;
+    margin-left: 20px;
 }
 
-.navigation ul li a
-{
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: darkred;
+}
+
+.middenknop {
+    padding: 100px 20px;
+    text-align: center;
+
+    color: white;
+}
+
+.middenknop h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.middenknop p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-}
-.navigation ul li a:hover
-{
-    background-color: #1761a0;
+    border-radius: 5px;
 }
 
+.button:hover {
+    background-color: whitesmoke;
+    border: white;
+}

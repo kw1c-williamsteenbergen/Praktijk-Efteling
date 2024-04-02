@@ -1,53 +1,39 @@
-<?php
-/**
- * Users: William Steenbergen, Jesse van der pluijm en Arne Kraaijveld
- * Date: 26-3-2024
- * File: index.php
- */
-?>
-
-<?php
-$indexNav= "";
-$vragNav = "pages/";
-$style = "./styles/";
-$logo = "./images/";
-?>
-
-<?php
-include "./includes/Header.php";
-?>
-<?php
-include "./includes/Navigatie.php";
-?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>
-
-    </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/stylesheet.css" rel="stylesheet">
+    <title>De Efteling</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 
 </head>
 <body>
-<header>
-    <h1>
 
-    </h1>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/eftelinglogo.jpg" alt="Efteling Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Ontdek het park</a></li>
+                <li><a href="#">Plan je bezoek</a></li>
+                <li><a href="#">Attracties</a></li>
+                <li><a href="#">Shows en entertainment</a></li>
+                <li><a href="#">Verblijf</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main id="plaatje">
-    <nav>
-        <ul>
-
-        </ul>
-    </nav>
-    <section>
-
+<main>
+    <section class="middenknop">
+        <h1>Ontdek alle betoverende</h1>
+        <h1>attracties in de Efteling</h1>
+        <a href="#" class="button">Ontdek de Efteling</a>
     </section>
 </main>
+
 </body>
 </html>
-
-
