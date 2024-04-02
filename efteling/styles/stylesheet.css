@@ -1,0 +1,10 @@
+#plaatje
+{
+    background-image: url("../images/1600x900-en-toen-jongen-bij-holle-bolle-gijs.jpg");
+    height: 80vh;
+    position: relative;
+    background-position: 50% 50%;
+    width: 100%;
+    background-size: cover;
+
+}
