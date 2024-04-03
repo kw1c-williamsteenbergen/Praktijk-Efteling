@@ -1,9 +1,18 @@
+/**
+ * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+ * Date: 25-3-2024
+ * File: Stylescheet.css
+ */
 
-body {
+body
+{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: white;
+    background-image: url("../images/achtergrond.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 /* Header */
@@ -13,11 +22,11 @@ body {
     align-items: center;
     padding: 20px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    height: 50px; /* Pas dit aan op basis van de werkelijke grootte van het logo */
+    height: 50px;
+    left: 20px;
 }
 
 nav ul {
@@ -35,13 +44,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: darkred;
+    color: #b71234;
 }
 
 .middenknop {
     padding: 100px 20px;
     text-align: center;
-
     color: white;
 }
 
@@ -59,7 +67,7 @@ nav ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: #fff;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -67,4 +75,19 @@ nav ul li a:hover {
 .button:hover {
     background-color: whitesmoke;
     border: white;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b71234;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.achtergrond img
+{
+    width: 1102px;
+    height: 588.93px;
 }
