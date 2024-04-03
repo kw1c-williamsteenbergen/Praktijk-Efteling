@@ -1,3 +1,14 @@
+@font-face
+{
+    font-family: "verner";
+    src: url("../fonts/Verner.ttf");
+}
+
+@font-face
+{
+    font-family: "Ernestine";
+    src: url("../fonts/ErnestineWeb Bold.ttf");
+}
 
 body
 {
@@ -11,7 +22,8 @@ body
 }
 
 /* Header */
-.header-container {
+.header-container
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,46 +31,61 @@ body
     background-color: white;
 }
 
-.logo img {
+.logo img
+{
     height: 50px;
     left: 20px;
 }
 
-nav ul {
+nav ul
+{
     list-style-type: none;
 }
 
-nav ul li {
+
+nav
+{
+    font-family: "Ernestine";
+}
+nav ul li
+{
     display: inline;
     margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li a
+{
     text-decoration: none;
     color: black;
 }
 
-nav ul li a:hover {
+nav ul li a:hover
+{
     color: #b71234;
 }
 
-.middenknop {
+.middenknop
+{
     padding: 100px 20px;
     text-align: center;
     color: white;
+    font-family: "Verner";
 }
 
-.middenknop h1 {
+.middenknop h1
+{
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.middenknop p {
+.middenknop p
+{
     font-size: 18px;
     margin-bottom: 40px;
 }
 
-.button {
+.button
+{
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
@@ -67,12 +94,14 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.button:hover {
+.button:hover
+{
     background-color: whitesmoke;
     border: white;
 }
 
-.button2 {
+.button2
+{
     display: inline-block;
     padding: 10px 20px;
     background-color: #b71234;
@@ -86,3 +115,22 @@ nav ul li a:hover {
     width: 1102px;
     height: 588.93px;
 }
+
+.top-navigation ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    top: 25px;
+    position: relative;
+    font-size: smaller;
+}
+
+.top-navigation ul li a
+{
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
