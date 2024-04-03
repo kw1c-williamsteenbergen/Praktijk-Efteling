@@ -1,6 +1,13 @@
+/**
+ 
+User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+Date: 25-3-2024
+File: Stylescheet.css
+*/
+
 @font-face
 {
-    font-family: "verner";
+    font-family: "Verner";
     src: url("../fonts/Verner.ttf");
 }
 
@@ -9,7 +16,6 @@
     font-family: "Ernestine";
     src: url("../fonts/ErnestineWeb Bold.ttf");
 }
-
 body
 {
     font-family: Arial, sans-serif;
@@ -22,8 +28,7 @@ body
 }
 
 /* Header */
-.header-container
-{
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,55 +36,44 @@ body
     background-color: white;
 }
 
-.logo img
-{
+.logo img {
     height: 50px;
     left: 20px;
 }
 
-nav ul
-{
+nav ul {
     list-style-type: none;
-}
-
-
-nav
-{
     font-family: "Ernestine";
 }
-nav ul li
-{
+
+nav ul li {
     display: inline;
     margin-left: 20px;
 }
 
-nav ul li a
-{
+nav ul li a {
     text-decoration: none;
     color: black;
 }
 
-nav ul li a:hover
-{
+nav ul li a:hover {
     color: #b71234;
 }
 
-.middenknop
-{
+.middenknop {
     padding: 100px 20px;
     text-align: center;
     color: white;
+
+}
+
+.middenknop h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
     font-family: "Verner";
 }
 
-.middenknop h1
-{
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.middenknop p
-{
+.middenknop p {
     font-size: 18px;
     margin-bottom: 40px;
 }
@@ -87,21 +81,21 @@ nav ul li a:hover
 .button
 {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: transparent;
-    color: black;
+    color: white;
     text-decoration: none;
+    border: 2px solid white;
     border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .button:hover
 {
-    background-color: whitesmoke;
-    border: white;
+    border: 2px solid white;
 }
 
-.button2
-{
+.button2 {
     display: inline-block;
     padding: 10px 20px;
     background-color: #b71234;
@@ -115,22 +109,3 @@ nav ul li a:hover
     width: 1102px;
     height: 588.93px;
 }
-
-.top-navigation ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    top: 25px;
-    position: relative;
-    font-size: smaller;
-}
-
-.top-navigation ul li a
-{
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-}
-

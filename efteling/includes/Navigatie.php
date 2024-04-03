@@ -1,11 +1,3 @@
-<nav class="top-navigation">
-    <ul>
-        <li><a href="#">Klantenservice en contact</a></li>
-        <li><a href="#">Vacatures</a></li>
-        <li><a href="#">Inloggen</a></li>
-        <li><a href="#">NL</a></li>
-    </ul>
-</nav>
 <div class="header-container">
     <div class="logo">
         <img src="images/eftelinglogo.jpg" alt="Efteling Logo">
