@@ -39,6 +39,17 @@
         <h1>Ontdek alle betoverende</h1>
         <h1>attracties in de Efteling</h1>
         <a href="#" class="button">Ontdek de Efteling ></a>
+        <div id="balk">
+            <h3 CLASS="rood">
+                Ontdek de magie van jou attractie
+            </h3>
+            <br>
+            <br>
+            <p class="zwart">
+                Welke attractie past bij jou
+            </p>
+
+        </div>
     </section>
 </main>
 

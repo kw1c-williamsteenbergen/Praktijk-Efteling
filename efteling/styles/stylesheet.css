@@ -108,6 +108,7 @@ nav ul li a:hover
     position: absolute;
     bottom: 12.5vh;
     left: 20vw;
+    border-radius: 25px;
 }
 
 .zwart
