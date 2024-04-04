@@ -94,3 +94,36 @@ nav ul li a:hover {
     width: 1102px;
     height: 588.93px;
 }
+
+div + nav, .nav2
+{
+    position: absolute;
+    padding-right: 26px;
+    margin-top: 10px;
+    width: 1024px;
+    display: block;
+    left: 30vw;
+}
+
+.nav2
+{
+    color: #4d3928;
+    left: 50%;
+    margin-left: -512px;
+    text-align: right;
+    font-size: 12px;
+    top: -1vh;
+    z-index: 10;
+}
+
+
+.search
+{
+    max-height: 3vh;
+}
+
+.vlag
+{
+    max-height: 2vh;
+    border-radius: 50%;
+}
