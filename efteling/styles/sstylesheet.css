@@ -24,26 +24,31 @@ body
     background-color: white;
 }
 
-.logo img {
+.logo img
+{
     height: 50px;
     left: 20px;
 }
 
-nav ul {
+nav ul
+{
     list-style-type: none;
 }
 
-nav ul li {
+nav ul li
+{
     display: inline;
     margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li a
+{
     text-decoration: none;
     color: black;
 }
 
-nav ul li a:hover {
+nav ul li a:hover
+{
     color: #b71234;
 }
 
@@ -90,4 +95,29 @@ nav ul li a:hover {
 {
     width: 1102px;
     height: 588.93px;
+}
+
+#balk
+{
+    width: 50vw;
+    height: 10vh;
+    background: white;
+    position: absolute;
+    bottom: 12.5vh;
+    left: 20vw;
+}
+
+.zwart
+{
+    color: black;
+    position: absolute;
+    left: 0px;
+
+}
+
+.rood
+{
+    color: red;
+    position: absolute;
+    left: 0px;
 }

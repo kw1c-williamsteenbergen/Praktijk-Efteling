@@ -2,7 +2,7 @@
 /**
 * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
 * Date: 25-3-2024
-* File: index.php
+* File: indexx.php
 */
 ?>
 
@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../styles/stylesheet.css">
+    <link href="../styles/sstylesheet.css">
 <title>Efteling Navigatiebalk</title>
 
 </head>
