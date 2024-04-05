@@ -25,7 +25,7 @@
             <li><a href="#">Ontdek het park</a></li>
             <li><a href="#">Plan je bezoek</a></li>
             <li><a href="#">Kom overnachten</a></li>
-            <li><a href="#">Welke atractie past bij jouw?</a></li>
+            <li><a href="./pages/vragenlijst.php">Welke atractie past bij jouw?</a></li>
             <li><a href="#"><img src="./images/search.webp" class="search"></a></li>
             <li><a href="#" class="button2">Tickets</a></li>
         </ul>
