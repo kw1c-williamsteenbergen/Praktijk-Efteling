@@ -9,7 +9,11 @@
 <html>
 <head>
     <title>Efteling Attractie Voorkeuren</title>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
 </head>
+<?php
+include "../includes/Navigatie.php";
+?>
 <body>
 <h2>Ontdek jouw ideale Efteling-attractie!</h2>
 <form method="post" action="result.php">
