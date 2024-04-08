@@ -32,7 +32,10 @@
         </ul>
     </nav>
 </div>
-<div class="time-box">
-    <span class="open-time">Vandaag: 10:00 - 19:00</span>
-    <p class="opening">Bekijk alle openingstijden</p>
-</div>
+<img src="<?php echo $images;?>openingplaatje.svg" class="opening"
+<section>
+    <p class="tijden">
+        Vandaag: 10:00 - 19:00 <br> <br> <span>Bekijk alle openingstijden</span>
+    </p>
+
+</section>

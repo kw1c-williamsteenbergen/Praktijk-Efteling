@@ -180,7 +180,7 @@ main
     background-position: center;
     width: 100%;
     height: 500px;
-
+    z-index: 1;
 }
 
 form
@@ -242,33 +242,30 @@ form p
     margin-left: 10vw;
 }
 
-nav
-{
-    position: relative;
-}
-
-.time-box {
-    position: absolute;
-    top: 79px;
-    background-color: #fbfbf8;
-    padding: 10px;
-    align-items: center;
-    right: 80px;
-    font-family: "Ernestine";
-    border: 2px solid #eee6d7;
-    background-image: url("../images/openingplaatje.svg");
-    background: no-repeat;
-}
-
-.open-time
-{
-    font-size: 14px;
-    margin-top: 5px;
-}
-
 .opening
 {
-    font-family: "Opensans";
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 208px;
+    z-index: 2;
+    position: absolute;
+    left: 81vw;
+}
+
+span
+{
+    text-decoration: underline;
+    font-family: Opensans;
+}
+
+.tijden
+{
+    position: absolute;
+    left: 82.5vw;
+    z-index: 3;
+    color: #4d3928;
+    font-family: "Ernestine";
     font-size: 14px;
-    text-align: center;
 }
