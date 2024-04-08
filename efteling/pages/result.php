@@ -3,72 +3,47 @@
 
 User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
 Date: 25-3-2024
-File: Resultaat.php
+File: result.php
  */
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Efteling Attractie Resultaat</title>
-    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css">
-</head>
-<?php
-include "../includes/Navigatie.php";
+$indexNav= "../";
+$vragNav = "";
+$Nav = "../includes/";
+$style = "../styles/";
+$logo = "../images/";
+$images = "../images/";
+
+include "../includes/Header.php";
 ?>
 <body>
 <?php
-// Verkrijg de antwoorden van de vragenlijst via POST
-$rit = $_POST['rit'];
-$thema = $_POST['thema'];
-$nat_worden = $_POST['nat_worden'];
-$interactie = $_POST['interactie'];
-$beweging = $_POST['beweging'];
-$met_wie = $_POST['met_wie'];
-$thema_soort = $_POST['thema_soort'];
-$belang = $_POST['belang'];
-$speciale_effecten = $_POST['speciale_effecten'];
-$teamwork = $_POST['teamwork'];
-$water = $_POST['water'];
-$specifiek_thema = $_POST['specifiek_thema'];
-// Maak een array van attracties met bijbehorende eigenschappen
-$attracties = array(
-    "Droomvlucht" => array("rit" => "a", "thema" => "a"),
-    "Baron 1898" => array("rit" => "b", "thema" => "b"),
-    "De Vliegende Hollander" => array("rit" => "c", "thema" => "c"),
-    "Symbolica" => array("rit" => "d", "thema" => "d"),
-    "Python" => array("rit" => "b", "thema" => "d"),
-    "Joris en de Draak" => array("rit" => "b", "thema" => "a"),
-    "Vogel Rok" => array("rit" => "b", "thema" => "d"),
-    "Fata Morgana" => array("rit" => "a", "thema" => "a"),
-    "Villa Volta" => array("rit" => "a", "thema" => "d"),
-);
+$totaalPunten = 0;
 
-$besteMatch = "";
-$besteScore = 0;
-
-// Loop door de attracties en bepaal de overeenstemmingsscore voor elke attractie op basis van de antwoorden
-foreach ($attracties as $attractie => $kenmerken) {
-    $score = 0;
-
-    // Bereken de score op basis van overeenkomsten tussen de antwoorden en de kenmerken van de attractie
-    if ($rit == $kenmerken['rit']) {
-        $score++;
-    }
-    if ($thema == $kenmerken['thema']) {
-        $score++;
-    }
-
-    // Update de beste match als de score hoger is dan de huidige beste score
-    if ($score > $besteScore) {
-        $besteMatch = $attractie;
-        $besteScore = $score;
-    }
+for($i=1; $i<=12; $i++)
+{
+    $totaalPunten += $_POST["vraag$i"];
 }
 
-// Toon het resultaat aan de gebruiker
-echo "<h2>Jouw ideale Efteling-attractie is: $besteMatch</h2>";
-?>
+echo "<p class='resultaat'> Je hebt $totaalPunten van de 120 punten behaald!</p>";
 
+switch($totaalPunten)
+{
+    case($totaalPunten > 100):
+        echo "<p class='resultaat'> Je houdt van snelle attracties de Baron is jouw ideale attractie is: De Barron 1898.</p>";
+        break;
+    case($totaalPunten > 70 && $totaalPunten <= 100):
+        echo "<p class='resultaat'> je houdt van snelle attracties maar niet al te extreem jouw favoriete attractie is: de Python.</p>";
+        break;
+    case($totaalPunten > 30 && $totaalPunten <= 70):
+        echo "<p class='resultaat'> je houdt van wat snelheid, je bent alleen niet echt een achtbaan fan, je favoriete attractie is: max en moritz.</p>";
+        break;
+    case($totaalPunten < 30):
+        echo "<p class='resultaat'> je bent niet een snelheidsfreak, je favoriete attractie is De Piranha of de Fata Morgana.</p>";
+        break;
+    default:
+        echo "<p class='resultaat'> Oeps, je hebt niks ingevuld! </p>";
+
+}
+?>
 </body>
 </html>

@@ -1,3 +1,8 @@
+/**
+ * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+ * Date: 25-3-2024
+ * File: stylesheet.css
+ */
 @font-face
 {
     font-family: "Verner";
@@ -23,9 +28,11 @@ body
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    overflow-x: hidden;
 }
 
-Header .header-container {
+Header .header-container
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,8 +111,8 @@ nav ul li a:hover {
 
 .achtergrond img
 {
-    width: 1102px;
-    height: 588.93px;
+    width: 57.45568300312826vw;
+    height: 61.28303850156087vh;
 }
 
 div + nav, .nav2
@@ -122,7 +129,7 @@ div + nav, .nav2
 {
     color: #4d3928;
     left: 50%;
-    margin-left: -512px;
+    margin-left: 26.694473409801876vw;
     text-align: right;
     font-size: 12px;
     top: -1vh;
@@ -179,7 +186,9 @@ main
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 500px;
+    height: 52.02913631633715vh;
+    background-size: 100%;
+
 
 }
 
@@ -242,6 +251,24 @@ form p
     margin-left: 10vw;
 }
 
+.tickets
+{
+    height: 4vh;
+    width: 8vw;
+    background: white;
+    position: absolute;
+    bottom: 22.5vh;
+    left: 27vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: -10px;
+}
+
+.resultaat
+{
+    text-align: center;
+}
+
 nav
 {
     position: relative;
@@ -253,7 +280,7 @@ nav
     background-color: #fbfbf8;
     padding: 10px;
     align-items: center;
-    right: 80px;
+    right: 4.1710114702815435vw;
     font-family: "Ernestine";
     border: 2px solid #eee6d7;
     background-image: url("../images/openingplaatje.svg");
