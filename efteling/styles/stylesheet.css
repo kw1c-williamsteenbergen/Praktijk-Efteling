@@ -23,6 +23,7 @@ Header .header-container {
     align-items: center;
     padding: 20px;
     background-color: white;
+    padding-bottom: 5px;
 }
 
 .logo img {
@@ -180,5 +181,52 @@ form
 form p
 {
     font-family: Ernestine;
+}
 
+#balk
+{
+    width: 50vw;
+    height: 10vh;
+    background: white;
+    position: absolute;
+    bottom: 12.5vh;
+    left: 20vw;
+
+}
+.zwart
+{
+    color: black;
+    position: absolute;
+    left: 0px;
+}
+
+.rood
+{
+    color: #b71234;
+    position: center;
+    top: 2vh;
+}
+.slapen
+{
+    height: 4vh;
+    width: 8vw;
+    background: wheat;
+    position: absolute;
+    bottom: 22.5vh;
+    left: 36.5vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: -10px;
+}
+
+.zwart_slapen
+{
+    color: black;
+    text-align: center;
+    top: 1vh;
+}
+
+.logo
+{
+    margin-left: 10vw;
 }

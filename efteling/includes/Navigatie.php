@@ -9,7 +9,7 @@
 
 <div class="header-container">
     <div class="logo">
-        <a href="<?php echo $indexNav;?>"><img src="<?php echo $images;?>eftelinglogo.jpg" alt="Efteling Logo"></a>
+        <a href="<?php echo $indexNav;?>"><img src="<?php echo $images;?>eftelinglogo.jpg" alt="Efteling Logo" class="logo"></a>
     </div>
     <div class="nav2">
         <nav>
