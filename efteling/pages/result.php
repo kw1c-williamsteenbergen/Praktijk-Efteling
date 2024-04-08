@@ -1,8 +1,9 @@
 <?php
 /**
- * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
- * Date: 25-3-2024
- * File: Resultaat.php
+
+User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+Date: 25-3-2024
+File: Resultaat.php
  */
 ?>
 
@@ -30,7 +31,6 @@ $speciale_effecten = $_POST['speciale_effecten'];
 $teamwork = $_POST['teamwork'];
 $water = $_POST['water'];
 $specifiek_thema = $_POST['specifiek_thema'];
-
 // Maak een array van attracties met bijbehorende eigenschappen
 $attracties = array(
     "Droomvlucht" => array("rit" => "a", "thema" => "a"),
