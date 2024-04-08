@@ -37,5 +37,4 @@
     <p class="tijden">
         Vandaag: 10:00 - 19:00 <br> <br> <span>Bekijk alle openingstijden</span>
     </p>
-
 </section>

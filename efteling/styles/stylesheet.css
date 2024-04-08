@@ -85,7 +85,7 @@ nav ul li a:hover {
     border: 2px solid white;
     border-radius: 5px;
     transition: color 0.3s, background-color 0.3s;
-    font-family: Ernestine;
+    font-family: "Ernestine";
 }
 
 .button:hover
@@ -93,13 +93,27 @@ nav ul li a:hover {
     border: 2px solid white;
 }
 
-.button2 {
+.button2 ,.button3
+{
     display: inline-block;
     padding: 10px 20px;
     background-color: #b71234;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: 2px solid #a4102f;
+}
+
+.button2:hover
+{
+    background-color: #a4102f;
+    color: white;
+}
+
+.button3
+{
+    margin: 1vw;
+    font-family: "Ernestine";
 }
 
 .achtergrond img
@@ -196,79 +210,107 @@ form p
 
 #balk
 {
-    width: 50vw;
-    height: 10vh;
+    width: 60vw;
+    height: 13vh;
     background: white;
     position: absolute;
-    bottom: 12.5vh;
+    bottom: 6.5vh;
     left: 20vw;
 
 }
-.zwart
+.zwart , .rood
 {
-    color: black;
-    position: absolute;
-    left: 0px;
+    color: #4d3928;
+    position: relative;
+    float: left;
 }
 
-.rood
+.zwart
+{
+    top: 2vw;
+    float: left;
+    left: -18vw;
+}
+
+.rood, .reserveren
 {
     color: #b71234;
-    position: center;
-    top: 2vh;
+    top: -1vh;
+    left: 1vh;
 }
 .slapen
 {
-    height: 4vh;
-    width: 8vw;
-    background: wheat;
+    height: 7vh;
+    width: 11vw;
+    background: #ede5d5;
     position: absolute;
-    bottom: 22.5vh;
+    bottom: 19.5vh;
     left: 36.5vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: -10px;
+    z-index: 10;
 }
 
 .zwart_slapen
 {
     color: black;
     text-align: center;
-    top: 1vh;
+    position: relative;
+    z-index: 10;
+    font-family: "Ernestine";
+}
+
+.tickets
+{
+    height: 7vh;
+    width: 16vw;
+    background: white;
+    position: absolute;
+    bottom: 19.5vh;
+    left: 20vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: -10px;
 }
 
 .logo
 {
-    margin-left: 10vw;
+    margin-left: 8vw;
 }
 
-nav
+.reserveren
 {
-    position: relative;
-}
-
-.time-box {
-    position: absolute;
-    top: 79px;
-    background-color: #fbfbf8;
-    padding: 10px;
-    align-items: center;
-    right: 80px;
+    left: initial;
     font-family: "Ernestine";
-    border: 2px solid #eee6d7;
-    background-image: url("../images/openingplaatje.svg");
-    background: no-repeat;
-}
-
-.open-time
-{
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 .opening
 {
-    font-family: "Opensans";
+    position: absolute;
+    top: 69px;
+    padding: 10px;
+    width: 208px;
+    height: 120px;
+    z-index: 2;
+    left: 80.5vw;
+}
+
+.tijden
+{
+    position: absolute;
+    background-image: url("../images/openingplaatje.svg");
+    background: no-repeat;
+    color: #4d3928;
+    z-index: 3;
+    left: 82.5vw;
+    font-family: "Ernestine";
     font-size: 14px;
-    text-align: center;
+}
+
+span
+{
+    text-decoration: underline;
+    font-family: Opensans;
+
 }
