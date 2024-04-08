@@ -284,3 +284,33 @@ form p
     left: initial;
     font-family: "Ernestine";
 }
+
+.opening
+{
+    position: absolute;
+    top: 69px;
+    padding: 10px;
+    width: 208px;
+    height: 120px;
+    z-index: 2;
+    left: 80.5vw;
+}
+
+.tijden
+{
+    position: absolute;
+    background-image: url("../images/openingplaatje.svg");
+    background: no-repeat;
+    color: #4d3928;
+    z-index: 3;
+    left: 82.5vw;
+    font-family: "Ernestine";
+    font-size: 14px;
+}
+
+span
+{
+    text-decoration: underline;
+    font-family: Opensans;
+
+}
