@@ -241,3 +241,34 @@ form p
 {
     margin-left: 10vw;
 }
+
+nav
+{
+    position: relative;
+}
+
+.time-box {
+    position: absolute;
+    top: 79px;
+    background-color: #fbfbf8;
+    padding: 10px;
+    align-items: center;
+    right: 80px;
+    font-family: "Ernestine";
+    border: 2px solid #eee6d7;
+    background-image: url("../images/openingplaatje.svg");
+    background: no-repeat;
+}
+
+.open-time
+{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.opening
+{
+    font-family: "Opensans";
+    font-size: 14px;
+    text-align: center;
+}

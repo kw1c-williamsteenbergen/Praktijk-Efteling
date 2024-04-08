@@ -32,3 +32,7 @@
         </ul>
     </nav>
 </div>
+<div class="time-box">
+    <span class="open-time">Vandaag: 10:00 - 19:00</span>
+    <p class="opening">Bekijk alle openingstijden</p>
+</div>
