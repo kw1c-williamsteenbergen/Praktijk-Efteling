@@ -23,7 +23,9 @@ include "../includes/Header.php";
             $totaalPunten += $_POST["vraag$i"];
         }
 
-        echo "<p class='resultaat'> Je hebt $totaalPunten van de 120 punten behaald!</p>";
+        $naam = $_POST["naam"];
+
+        echo "<p class='resultaat'>$naam, je hebt $totaalPunten van de 120 punten behaald!</p>";
 
         switch($totaalPunten)
         {
@@ -43,6 +45,7 @@ include "../includes/Header.php";
             default:
                 echo "<p class='resultaat'> Geen punten bekend</p>";
         }
+        include "../includes/Footer.php"
         ?>
     </body>
 </html>

@@ -14,10 +14,34 @@ $images = "../images/";
 
 include "../includes/Header.php";
 
+$uur = date("H");
+
+if ($uur >= 6 && $uur < 12)
+{
+    $result = "<h2>Goedemorgen";
+} elseif ($uur >= 12 && $uur < 18)
+{
+    $result = "<h2>Goedemiddag";
+}
+else
+{
+    $result = "<h2>Goedenavond";
+}
+
+echo $result . ", hier ontdek jouw ideale Efteling-attractie!</h2>";
 ?>
     <body>
-        <h2>Ontdek jouw ideale Efteling-attractie!</h2>
+        <p class="inleiding">
+            Ontdek welke magische Efteling-attractie perfect bij jou past!
+            <br>
+            Beantwoord een paar korte vragen en laat ons je naar jouw ideale
+            avontuur leiden in het betoverende Efteling-park.
+        </p>
         <form method="post" action="result.php">
+
+            <label for="naam">Wat is je naam?</label><br>
+            <input type="text" class="tekstbox" name="naam"><br>
+
             <p>Welk soort attractie spreekt jou het meest aan?</p>
             <input type="radio" name="vraag1" required value="5"> Rustige ritjes met een panoramisch uitzicht<br>
             <input type="radio" name="vraag1" required value="10"> Snelle achtbanen en spannende attracties<br>
@@ -61,10 +85,10 @@ include "../includes/Header.php";
             <input type="radio" name="vraag7" required value="5"> Technologische en futuristische thema's<br>
 
             <p>Wat vind je belangrijker bij attracties?</p>
-            <input type="radio" name="vraag8" required value="5"> Een verhaal en een meeslepende ervaring<br>
-            <input type="radio" name="vraag8" required value="5"> Hoogwaardige speciale effecten en technologie<br>
-            <input type="radio" name="vraag8" required value="10"> Snelheid en opwinding<br>
-            <input type="radio" name="vraag8" required value="1"> Interactie en betrokkenheid<br>
+            <input type="checkbox" name="vraag8" required value="5"> Een verhaal en een meeslepende ervaring<br>
+            <input type="checkbox" name="vraag8" required value="5"> Hoogwaardige speciale effecten en technologie<br>
+            <input type="checkbox" name="vraag8" required value="5"> Snelheid en opwinding<br>
+            <input type="checkbox" name="vraag8" required value="1"> Interactie en betrokkenheid<br>
 
             <p>Ben je op zoek naar attracties met indrukwekkende speciale effecten, zoals vuurwerk of lichtshows?</p>
             <input type="radio" name="vraag9" required value="10"> Ja<br>
@@ -83,6 +107,11 @@ include "../includes/Header.php";
             <input type="radio" name="vraag12" required value="10"> Nee<br>
 
             <input type="submit" value="Verstuur">
+            <br>
+            <br>
         </form>
+        <?php
+        include "../includes/Footer.php"
+        ?>
     </body>
 </html>

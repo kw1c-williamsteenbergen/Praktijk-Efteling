@@ -2,8 +2,10 @@
 /**
 * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
 * Date: 25-3-2024
-* File: index.php
+* File: Navigatie.php
 */
+
+date_default_timezone_set("Europe/Amsterdam")
 
 ?>
 
@@ -35,6 +37,6 @@
 <img src="<?php echo $images;?>openingplaatje.svg" class="opening"
 <section>
     <p class="tijden">
-        Vandaag: 10:00 - 19:00 <br> <br> <span>Bekijk alle openingstijden</span>
+        Vandaag: 10:00 - 19:00 <br> <br> <span>Bekijk alle openingstijden</span> <br><br> <?php echo date("H:i d-m-y"); ?>
     </p>
 </section>

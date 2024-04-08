@@ -1,3 +1,7 @@
+/*User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+Date: 25-3-2024
+File: stylesheet.css*/
+
 @font-face
 {
     font-family: "Verner";
@@ -22,7 +26,8 @@ body
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fcf5f1;
+    overflow-x: hidden;
 }
 
 Header .header-container {
@@ -65,9 +70,11 @@ nav ul li a:hover {
 
 }
 .middenknop h1 {
-    font-size: 36px;
+    font-size: 60px;
     margin-bottom: 20px;
-    font-family: "Verner";
+    font-family: Verner;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    margin: 0 0 20px;
 }
 
 .middenknop p {
@@ -91,6 +98,8 @@ nav ul li a:hover {
 .button:hover
 {
     border: 2px solid white;
+    background-color: #fafaf7;
+    color: black;
 }
 
 .button2 ,.button3
@@ -104,7 +113,7 @@ nav ul li a:hover {
     border: 2px solid #a4102f;
 }
 
-.button2:hover
+.button2:hover, .button3:hover
 {
     background-color: #a4102f;
     color: white;
@@ -164,7 +173,7 @@ span
 {
     text-decoration: underline;
     font-family: Opensans;
-
+    cursor: pointer;
 }
 
 
@@ -187,6 +196,7 @@ input[type="submit"]
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 5vw;
 }
 
 input[type="submit"]:hover {
@@ -196,7 +206,7 @@ input[type="submit"]:hover {
 main
 {
     background-color: white;
-    background-image: url("../images/achtergrond2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/achtergrond2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -208,6 +218,16 @@ form
 {
     text-align: center;
     font-family: "Opensans";
+}
+
+h2, .inleiding
+{
+    text-align: center;
+}
+
+.inleiding
+{
+    font-family: Opensans;
 }
 
 form p
@@ -223,7 +243,6 @@ form p
     position: absolute;
     bottom: 6.5vh;
     left: 20vw;
-
 }
 .zwart , .rood
 {
@@ -231,6 +250,17 @@ form p
     position: relative;
     float: left;
 }
+
+.reserveren:hover
+{
+    cursor: pointer;
+}
+
+.slapen:hover
+{
+    cursor: pointer;
+}
+
 
 .zwart
 {
@@ -313,11 +343,32 @@ form p
     left: 82.5vw;
     font-family: "Ernestine";
     font-size: 14px;
+    text-align: center;
 }
 
 span
 {
     text-decoration: underline;
     font-family: Opensans;
+}
 
+.tekstbox
+{
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer
+{
+    text-align: center;
+    background-color: #a4102f;
+    color: black;
+    padding: 2px;
+    position: fixed;
+    width: 100vw;
+    bottom: 1px;
 }
