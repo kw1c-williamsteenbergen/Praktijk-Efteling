@@ -196,48 +196,69 @@ form p
 
 #balk
 {
-    width: 50vw;
-    height: 10vh;
+    width: 71vw;
+    height: 13vh;
     background: white;
     position: absolute;
-    bottom: 12.5vh;
+    bottom: 9.5vh;
     left: 20vw;
-
 }
+.zwart , .rood
+{
+    color: #4d3928;
+    position: relative;
+    float: left;
+}
+
 .zwart
 {
-    color: black;
-    position: absolute;
-    left: 0px;
+    top: 2vw;
+    float: left;
+    left: -18.2vw;
 }
 
 .rood
 {
     color: #b71234;
-    position: center;
-    top: 2vh;
+    top: -1vh;
 }
 .slapen
 {
-    height: 4vh;
-    width: 8vw;
-    background: wheat;
+    height: 7vh;
+    width: 11vw;
+    background: #ede5d5;
     position: absolute;
     bottom: 22.5vh;
     left: 36.5vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: -10px;
+    z-index: 10;
 }
 
 .zwart_slapen
 {
     color: black;
     text-align: center;
-    top: 1vh;
+    position: relative;
+    z-index: 10;
+}
+
+.tickets
+{
+    height: 7vh;
+    width: 16vw;
+    background: white;
+    position: absolute;
+    bottom: 22.5vh;
+    left: 20vw;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top: -10px;
 }
 
 .logo
 {
-    margin-left: 10vw;
+    margin-left: 8vw;
 }
+

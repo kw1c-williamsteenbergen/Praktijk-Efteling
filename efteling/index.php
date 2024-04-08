@@ -25,20 +25,25 @@ include "./includes/Header.php";
                         tickets en reserveren
                     </p>
                 </div>
+                </div>
                 <div class="slapen">
                     <p class="zwart_slapen">
                         Blijf slapen
                     </p>
                 </div>
-                <div id="balk">
-                    <h3 CLASS="rood">
-                        Ontdek de magie van jou attractie
-                    </h3>
-                    <br>
-                    <br>
-                    <p class="zwart">
-                        Welke attractie past bij jou
+                <div class="tickets">
+                    <p class="rood">
+                        tickets en reserveren
                     </p>
+                </div>
+                <div id="balk">
+                    <h3 class="rood">
+                        Bezoek de Wereld vol Wonderen
+                    </h3>
+                    <p class="zwart">
+                        Plan je bezoek aan de Efteling. Kinderen t/m 3 jaar gratis.
+                    </p>
+                    <a href="#" class="button2">Tickets > </a>
                 </div>
             </section>
         </main>
