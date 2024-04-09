@@ -5,7 +5,6 @@
  * File: Header.php
  */
 ?>
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -15,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $style;?>stylesheet.css">
 </head>
 <header>
-        <?php
-            include $Nav. "Navigatie.php";
-        ?>
+    <?php
+        include $Nav. "Navigatie.php";
+    ?>
 </header>

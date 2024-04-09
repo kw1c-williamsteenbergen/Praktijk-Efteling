@@ -17,7 +17,7 @@ include "./includes/Header.php";
         <main>
             <section class="middenknop">
                 <h1>
-                    En toen... was ik in een <br> wereld vol wonderen
+                    Binnenkort de Efteling bezoeken?
                 </h1>
                 <a href="#" class="button">Ontdek de Efteling ></a>
 

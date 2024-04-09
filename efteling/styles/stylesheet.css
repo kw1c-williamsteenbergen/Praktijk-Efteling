@@ -1,8 +1,7 @@
-/**
- * User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
- * Date: 25-3-2024
- * File: stylesheet.css
- */
+/*User: William Steenbergen, Arne Kraaijeveld en Jesse van der Pluim
+Date: 25-3-2024
+File: stylesheet.css*/
+
 @font-face
 {
     font-family: "Verner";
@@ -27,12 +26,11 @@ body
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fcf5f1;
     overflow-x: hidden;
 }
 
-Header .header-container
-{
+Header .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,9 +70,11 @@ nav ul li a:hover {
 
 }
 .middenknop h1 {
-    font-size: 36px;
+    font-size: 60px;
     margin-bottom: 20px;
-    font-family: "Verner";
+    font-family: Verner;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    margin: 0 0 20px;
 }
 
 .middenknop p {
@@ -92,27 +92,43 @@ nav ul li a:hover {
     border: 2px solid white;
     border-radius: 5px;
     transition: color 0.3s, background-color 0.3s;
-    font-family: Ernestine;
+    font-family: "Ernestine";
 }
 
 .button:hover
 {
     border: 2px solid white;
+    background-color: #fafaf7;
+    color: black;
 }
 
-.button2 {
+.button2 ,.button3
+{
     display: inline-block;
     padding: 10px 20px;
     background-color: #b71234;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: 2px solid #a4102f;
+}
+
+.button2:hover, .button3:hover
+{
+    background-color: #a4102f;
+    color: white;
+}
+
+.button3
+{
+    margin: 1vw;
+    font-family: "Ernestine";
 }
 
 .achtergrond img
 {
-    width: 57.45568300312826vw;
-    height: 61.28303850156087vh;
+    width: 1102px;
+    height: 588.93px;
 }
 
 div + nav, .nav2
@@ -129,7 +145,7 @@ div + nav, .nav2
 {
     color: #4d3928;
     left: 50%;
-    margin-left: 26.694473409801876vw;
+    margin-left: -512px;
     text-align: right;
     font-size: 12px;
     top: -1vh;
@@ -151,8 +167,15 @@ div + nav, .nav2
 h2
 {
     font-family: "Ernestine", serif;
-    text-align: center;
 }
+
+span
+{
+    text-decoration: underline;
+    font-family: Opensans;
+    cursor: pointer;
+}
+
 
 label
 {
@@ -173,6 +196,7 @@ input[type="submit"]
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 5vw;
 }
 
 input[type="submit"]:hover {
@@ -182,20 +206,28 @@ input[type="submit"]:hover {
 main
 {
     background-color: white;
-    background-image: url("../images/achtergrond.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/achtergrond2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 52.02913631633715vh;
-    background-size: 100%;
-
-
+    height: 500px;
+    z-index: 2;
 }
 
 form
 {
     text-align: center;
     font-family: "Opensans";
+}
+
+h2, .inleiding
+{
+    text-align: center;
+}
+
+.inleiding
+{
+    font-family: Opensans;
 }
 
 form p
@@ -205,97 +237,138 @@ form p
 
 #balk
 {
-    width: 50vw;
-    height: 10vh;
+    width: 60vw;
+    height: 13vh;
     background: white;
     position: absolute;
-    bottom: 12.5vh;
+    bottom: 6.5vh;
     left: 20vw;
-
 }
+.zwart , .rood
+{
+    color: #4d3928;
+    position: relative;
+    float: left;
+}
+
+.reserveren:hover
+{
+    cursor: pointer;
+}
+
+.slapen:hover
+{
+    cursor: pointer;
+}
+
+
 .zwart
 {
-    color: black;
-    position: absolute;
-    left: 0px;
+    top: 2vw;
+    float: left;
+    left: -18vw;
 }
 
-.rood
+.rood, .reserveren
 {
     color: #b71234;
-    position: center;
-    top: 2vh;
+    top: -1vh;
+    left: 1vh;
 }
 .slapen
 {
-    height: 4vh;
-    width: 8vw;
-    background: wheat;
+    height: 7vh;
+    width: 11vw;
+    background: #ede5d5;
     position: absolute;
-    bottom: 22.5vh;
+    bottom: 19.5vh;
     left: 36.5vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: -10px;
+    z-index: 10;
 }
 
 .zwart_slapen
 {
     color: black;
     text-align: center;
-    top: 1vh;
-}
-
-.logo
-{
-    margin-left: 10vw;
+    position: relative;
+    z-index: 10;
+    font-family: "Ernestine";
 }
 
 .tickets
 {
-    height: 4vh;
-    width: 8vw;
+    height: 7vh;
+    width: 16vw;
     background: white;
     position: absolute;
-    bottom: 22.5vh;
-    left: 27vw;
+    bottom: 19.5vh;
+    left: 20vw;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: -10px;
 }
 
-.resultaat
+.logo
 {
-    text-align: center;
+    margin-left: 8vw;
 }
 
-nav
+.reserveren
 {
-    position: relative;
-}
-
-.time-box {
-    position: absolute;
-    top: 79px;
-    background-color: #fbfbf8;
-    padding: 10px;
-    align-items: center;
-    right: 4.1710114702815435vw;
+    left: initial;
     font-family: "Ernestine";
-    border: 2px solid #eee6d7;
-    background-image: url("../images/openingplaatje.svg");
-    background: no-repeat;
-}
-
-.open-time
-{
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 .opening
 {
-    font-family: "Opensans";
+    position: absolute;
+    top: 69px;
+    padding: 10px;
+    width: 208px;
+    height: 120px;
+    z-index: 2;
+    left: 80.5vw;
+}
+
+.tijden
+{
+    position: absolute;
+    background-image: url("../images/openingplaatje.svg");
+    background: no-repeat;
+    color: #4d3928;
+    z-index: 3;
+    left: 82.5vw;
+    font-family: "Ernestine";
     font-size: 14px;
     text-align: center;
+}
+
+span
+{
+    text-decoration: underline;
+    font-family: Opensans;
+}
+
+.tekstbox
+{
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+footer
+{
+    text-align: center;
+    background-color: #a4102f;
+    color: black;
+    padding: 2px;
+    position: fixed;
+    width: 100vw;
+    bottom: 1px;
 }
