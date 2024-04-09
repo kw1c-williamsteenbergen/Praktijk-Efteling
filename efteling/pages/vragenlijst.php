@@ -85,10 +85,10 @@ echo $result . ", hier ontdek jouw ideale Efteling-attractie!</h2>";
             <input type="radio" name="vraag7" required value="5"> Technologische en futuristische thema's<br>
 
             <p>Wat vind je belangrijker bij attracties?</p>
-            <input type="checkbox" name="vraag8" required value="5"> Een verhaal en een meeslepende ervaring<br>
-            <input type="checkbox" name="vraag8" required value="5"> Hoogwaardige speciale effecten en technologie<br>
-            <input type="checkbox" name="vraag8" required value="5"> Snelheid en opwinding<br>
-            <input type="checkbox" name="vraag8" required value="1"> Interactie en betrokkenheid<br>
+            <input type="checkbox" name="vraag8"  value="5"> Een verhaal en een meeslepende ervaring<br>
+            <input type="checkbox" name="vraag8"  value="5"> Hoogwaardige speciale effecten en technologie<br>
+            <input type="checkbox" name="vraag8"  value="5"> Snelheid en opwinding<br>
+            <input type="checkbox" name="vraag8"  value="1"> Interactie en betrokkenheid<br>
 
             <p>Ben je op zoek naar attracties met indrukwekkende speciale effecten, zoals vuurwerk of lichtshows?</p>
             <input type="radio" name="vraag9" required value="10"> Ja<br>
