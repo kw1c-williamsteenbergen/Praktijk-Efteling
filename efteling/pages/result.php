@@ -16,8 +16,8 @@ include "../includes/Header.php";
 ?>
     <body>
         <?php
-        $totaalPunten = 0;
 
+        $totaalPunten = 0;
         for($i=1; $i<=12; $i++)
         {
             $totaalPunten += $_POST["vraag$i"];
@@ -30,20 +30,20 @@ include "../includes/Header.php";
         switch($totaalPunten)
         {
             case($totaalPunten > 100):
-                echo "<p class='resultaat'> Je houdt van snelle spannende attracties</p>";
+                echo "<p class='resultaat'> Je houdt van snelle spannende attracties de baron is jouw favoriete atractie!</p> .<img src='../images/baron.jpg'>";
+                      
                 break;
             case($totaalPunten > 70 && $totaalPunten <= 100):
-                echo "<p class='resultaat'> je verzorgt je gebit goed, maar je op specifieke onderdelen moet je gedrag toch verbeteren</p>";
+                echo "<p class='resultaat'> je houdt van snelle achtbanen maar niet van de Baron dan is de Python iets voor jou!</p> .<img src='../images/python.jpg'>";
                 break;
             case($totaalPunten > 30 && $totaalPunten <= 70):
-                echo "<p class='resultaat'> je verzorgt gebit matig en zou om advies moeten gaan vragen bij de tandarts. Waarschijnlijk heb je al gebitsproblemen?</p>";
+                echo "<p class='resultaat'> Je houdt wel van een beetje actie maar je vind de Python nog een beetje eng? Dan is Max en Morritz iets voor jou!</p> . <img src='../images/max_morritz.jpg'>";
                 break;
             case($totaalPunten < 30):
-                echo "<p class='resultaat'> je verzorgt gebit niet en zou om advies moet gaan vragen bij de tandarts. 
-                      Waarschijnlijk ga je niet langs een tandarts en heb je ook al gebitsproblemen.</p>";
+                echo "<p class='resultaat'> je houdt eerder van een betoverende ervaring dan een snelle de droomvlucht is jouw ideale attractie!</p> . <img src='../images/droomvlucht.jpg' ";
                 break;
             default:
-                echo "<p class='resultaat'> Geen punten bekend</p>";
+                echo "<p class='resultaat'> Oeps, het lijkt erop dat je niks hebt ingevuld?</p>. <img src='../images/langnek.jpg'>";
         }
         include "../includes/Footer.php"
         ?>
