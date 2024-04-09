@@ -34,18 +34,19 @@ include "../includes/Header.php";
                       
                 break;
             case($totaalPunten > 70 && $totaalPunten <= 100):
-                echo "<p class='resultaat'> je houdt van snelle achtbanen maar niet van de Baron dan is de Python iets voor jou!</p> .<img src='../images/python.jpg'>";
+                echo "<p class='resultaat'> je houdt van snelle achtbanen maar niet van de Baron dan is de Python iets voor jou!</p> .<img src='../images/python.jpg' class='fotoresultaat'>";
                 break;
             case($totaalPunten > 30 && $totaalPunten <= 70):
-                echo "<p class='resultaat'> Je houdt wel van een beetje actie maar je vind de Python nog een beetje eng? Dan is Max en Morritz iets voor jou!</p> . <img src='../images/max_morritz.jpg'>";
+                echo "<p class='resultaat'> Je houdt wel van een beetje actie maar je vind de Python nog een beetje eng? Dan is Max en Morritz iets voor jou!</p> . <img src='../images/max_morritz.jpg' class='fotoresultaat'>";
                 break;
             case($totaalPunten < 30):
-                echo "<p class='resultaat'> je houdt eerder van een betoverende ervaring dan een snelle de droomvlucht is jouw ideale attractie!</p> . <img src='../images/droomvlucht.jpg' ";
+                echo "<p class='resultaat'> je houdt eerder van een betoverende ervaring dan een snelle de droomvlucht is jouw ideale attractie!</p> . <img src='../images/droomvlucht.jpg' class='fotoresultaat'>";
                 break;
             default:
-                echo "<p class='resultaat'> Oeps, het lijkt erop dat je niks hebt ingevuld?</p>. <img src='../images/langnek.jpg'>";
+                echo "<p class='resultaat'> Oeps, het lijkt erop dat je niks hebt ingevuld?</p>. <img src='../images/langnek.jpg' class='fotoresultaat'>";
         }
-        include "../includes/Footer.php"
+        include "../includes/Footer.php";
+
         ?>
     </body>
 </html>

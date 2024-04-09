@@ -372,3 +372,14 @@ footer
     width: 100vw;
     bottom: 1px;
 }
+
+.resultaat
+{
+    text-align: center;
+}
+
+.fotoresultaat
+{
+    max-height: 15vw;
+    margin-left: 36vw;
+}
