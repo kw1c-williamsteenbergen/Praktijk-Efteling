@@ -20,6 +20,7 @@ include "./includes/Header.php";
                     Binnenkort de Efteling bezoeken?
                 </h1>
                 <a href="#" class="button">Ontdek de Efteling ></a>
+
                 </div>
                 <div class="slapen">
                     <p class="zwart_slapen">
@@ -27,18 +28,17 @@ include "./includes/Header.php";
                     </p>
                 </div>
                 <div class="tickets">
-                    <p class="reserveren">
+                    <p class="rood">
                         tickets en reserveren
                     </p>
                 </div>
                 <div id="balk">
-                    <h3 class="rood">
-                        Bezoek de Wereld vol Wonderen
+                    <h3 CLASS="rood">
+                        Ontdek de magie van jou attractie
+                        <p class="zwart">
+                            Welke attractie past bij jou
+                        </p>
                     </h3>
-                    <p class="zwart">
-                        Plan je bezoek aan de Efteling. Kinderen t/m 3 jaar gratis.
-                    </p>
-                    <a href="#" class="button3">Tickets > </a>
                 </div>
             </section>
         </main>
